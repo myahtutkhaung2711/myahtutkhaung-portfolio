@@ -4,8 +4,8 @@
 }
 
 .navbar {
-    background-color: #333;
-    color: white;
+    background-color: gray;
+    color: gray;
     position: sticky;
     top: 1;
     width: 100%;
@@ -25,7 +25,7 @@
 .portfolio_name {
     text-decoration: none;
     font-size: 1.2rem;
-    color: antiquewhite;
+    color: white;
     font-weight: 100;
 }
 
@@ -38,13 +38,13 @@
 
 .nav-item a {
     text-decoration: none;
-    color: antiquewhite;
+    color: white;
     font-size: 18px;
     transition: color 0.3s ease;
 }
 
 .nav-item a:hover {
-    color: seagreen;
+    color: #ff6600;
 }
 
 @media (max-width: 768px) {
