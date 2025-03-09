@@ -3,13 +3,62 @@
     padding: 0;
 }
 
-header {
-    font-family: 'Roboto', sans-serif;
+.navbar {
+    background-color: gray;
+    color: gray;
+    position: sticky;
+    top: 1;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(154, 121, 121, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.portfolio_name {
+    text-decoration: none;
     font-size: 1.2rem;
-    background-color: rgb(208, 199, 185);
+    color: white;
+    font-weight: 100;
 }
 
 a{
     text-decoration: none;
-    color: black;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+    color: #ff6600;
+}
+
+@media (max-width: 768px) {
+   .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+   }
+
+   .nav-list.show {
+        max-height: 300px;
+   }
+
+   .menu-toggle {
+        display: block;
+        cursor: pointer;
+   }
 }
