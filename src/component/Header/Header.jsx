@@ -6,19 +6,16 @@ function Header() {
     return(
         <>
            <header className='header'>
-                <nav className='navbar'>
-                    <div className='nav-container'>
-                        <a href="#home" className='portfolio_name'>Mya Htut Khaung</a>
-                        <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
-                        <ul className='nav-list grid row'>
-                            <li className='nav-item'> <a href='#home'>Home</a> </li>
-                            <li className='nav-item'><a href='#about'>About</a></li>
-                            <li className='nav-item'><a href='#skills'>Skills</a></li>
-                            <li className='nav-item'><a href='#projects'>Projects</a></li>
-                            <li className='nav-item'><a href='#Contact'>Contact</a></li>
-                        </ul>
-                    </div>
-                </nav>
+                <div className="header container">
+                    <a href="#"> Mya Htut Khaung </a>
+                </div>
+
+                {/* Nav Section  */}
+                <div className="nav">
+                    <ul className='nav container'>
+                        <li></li>
+                    </ul>
+                </div>
            </header> 
         </>
     );
