@@ -1,0 +1,33 @@
+/* Reset some defaults */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@700&display=swap');
+
+/* Apply Poppins to whole body */
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+/* Links with nice color */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+
+}
+
+/* Example button styling */
+button, .btn {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+
+section {
+  padding: 60px 15px;
+}

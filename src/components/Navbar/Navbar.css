@@ -1,0 +1,19 @@
+.my-navbar {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    padding: 0.8rem 0;
+}
+
+.my-navbar .nav-link {
+    color: white !important;
+    margin-left: 1rem;
+    transition: color 0.3s ease;
+}
+
+.my-navbar .nav-link:hover {
+    color: #ffdf6c !important;
+}
+
+.brand {
+    font-weight: bold;
+    color: white !important;
+}
