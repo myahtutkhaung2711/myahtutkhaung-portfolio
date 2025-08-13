@@ -1,31 +1,28 @@
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
 import './Services.css';
 
-function Services() {
-    const services = [
-        { title: 'Web Development', desc: 'Building responsive and modern websites.' },
-        { title: 'Backend Development', desc: 'Laravel & MySQL based API and logic.' },
-        { title: 'UI/UX Design', desc: 'Clean and user-friendly interfaces.' },
-    ];
+const services = [
+  'Web Development',
+  'UI/UX Design',
+  'Responsive Design',
+  'Performance Optimization',
+];
 
+const Services = () => {
     return (
-        <Container className="py-5" id="services">
-            <h2 className="text-center mb-4">Services</h2>
-            <Row>
-                {services.map((service, index) => (
-                    <Col md={4} key={index} className="mb-3">
-                        <Card className="service-card h-100">
-                            <Card.Body>
-                                <Card.Title>{service.title}</Card.Title>
-                                <Card.Text>{service.desc}</Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                ))}
-            </Row>
-        </Container>
+        <section id="services" className="container">
+        <h2 className="mb-4 text-center">Services</h2>
+        <div className="row">
+            {services.map((service, idx) => (
+            <div key={idx} className="col-md-6 mb-3">
+                <div className="service-card p-3 border rounded shadow-sm text-center">
+                <h5>{service}</h5>
+                </div>
+            </div>
+            ))}
+        </div>
+        </section>
     );
-}
+};
 
 export default Services;

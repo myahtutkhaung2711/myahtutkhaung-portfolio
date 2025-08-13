@@ -1,9 +1,9 @@
 .service-card {
-  border: none;
-  background: #f8f9fa;
-  transition: transform 0.3s;
+  background-color: #fff;
+  transition: transform 0.3s ease;
 }
 
 .service-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }

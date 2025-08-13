@@ -1,0 +1,22 @@
+#work {
+    background-color: #f8f9fa;
+    padding: 60px 15px;
+}
+
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #555;
+}
