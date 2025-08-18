@@ -31,6 +31,7 @@ function Header() {
                                     ]}
                                     typeSpeed={80}
                                     backSpeed={40}
+                                    loop={true} 
                                     cursorChar="|"
                                     showCursor={true}
                                 />
