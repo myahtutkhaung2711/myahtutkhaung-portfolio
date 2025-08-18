@@ -6,9 +6,17 @@ import './Navbar.css';
 
 function MyNavbar() {
     return (
-        <Navbar bg="dark" variant="dark" expand="lg" sticky="top" className="my-navbar">
+        <Navbar bg="light" variant="dark" expand="lg" sticky="top" className="my-navbar">
             <Container>
-                <Navbar.Brand href="#home">Mya Htut Khaung</Navbar.Brand>
+                <Navbar.Brand href="#home" className="brand">
+                    <img
+                        src="/src/assets/MyaHtutKhaung_logo.png" // replace with your logo path
+                        alt="MyaHtutKhaung Logo"
+                        width="200" 
+                        height="auto"
+                        className="d-inline-block align-top"
+                    />
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">

@@ -1,19 +1,25 @@
 .my-navbar {
-    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    position: sticky;
     padding: 0.8rem 0;
 }
 
 .my-navbar .nav-link {
-    color: white !important;
+    color: black !important;
     margin-left: 1rem;
     transition: color 0.3s ease;
 }
 
 .my-navbar .nav-link:hover {
-    color: #ffdf6c !important;
+    color: #2575fc !important;
 }
 
 .brand {
+    font-size: 20px;
     font-weight: bold;
-    color: white !important;
+    color: black !important;
+}
+
+.barnd:hover {
+    color: #2575fc !important;
 }
