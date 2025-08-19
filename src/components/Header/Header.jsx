@@ -3,12 +3,19 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import { ReactTyped } from "react-typed";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub, faTelegram, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
 import profileImg from "../../assets/profile.png";
 import './Header.css';
 
 function Header() {
     return (
         <div className="header-section text-white" id="home">
+            <div className="background-icons">
+                {[...Array(35)].map((_, i) => (
+                    <FontAwesomeIcon key={i} icon={faCode} className="floating-icon" />
+                ))}
+            </div>
+
             <Container>
                 <Row className="align-items-center">
                     {/* Left Side - Text */}
@@ -54,7 +61,7 @@ function Header() {
                             </a>
                         </div>
 
-                        <Button variant='dark' href="#about" className="btn mt-4 text-light">About Me !</Button>
+                        <Button href="#about" className="btn mt-4 text-light">About Me !</Button>
                     </Col>
 
                     {/* Right Side - Image */}

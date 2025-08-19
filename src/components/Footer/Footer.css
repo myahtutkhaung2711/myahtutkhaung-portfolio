@@ -1,3 +1,6 @@
 .footer {
-  background: #212529;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  position: sticky;
+  padding: 0.8rem 0;
 }

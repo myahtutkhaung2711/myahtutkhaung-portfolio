@@ -1,3 +1,23 @@
-#skills h6 {
-  font-weight: bold;
+.header {
+  font-weight: 800;
+  color: #1b263b;
+}
+
+.skills-section {
+  background: #fff;
+}
+
+.skill-card {
+  border: 2px solid #1b263b;
+  border-radius: 12px;
+
+  background: #1b263b;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 18px rgba(0, 255, 255, 0.2);
+  border: 2px solid #1b263b;
 }
