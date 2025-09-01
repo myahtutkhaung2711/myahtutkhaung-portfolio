@@ -1,4 +1,46 @@
 body {
-  font-family: "Source Sans Pro", sans-serif;
-  color: #333;
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f9fa; 
+  color: #212529; 
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #1e293b; /* slightly darker for contrast */
+}
+
+a {
+  color: #0dcaf0; /* cyan accent */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0d6efd;
+  border-bottom: 2px solid #0d6efd;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Scrollbar (optional, for modern look) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #0dcaf0;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0d6efd;
 }

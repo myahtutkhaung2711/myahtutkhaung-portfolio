@@ -10,10 +10,30 @@ import './Header.css';
 function Header() {
     return (
         <div className="header-section text-white" id="home">
-            <div className="background-icons">
-                {[...Array(35)].map((_, i) => (
-                    <FontAwesomeIcon key={i} icon={faCode} className="floating-icon" />
-                ))}
+            <div className="background-lines">
+                <svg className="animated-lines" width="100%" height="100%" preserveAspectRatio="none">
+                    {Array.from({ length: 15 }).map((_, i) => (
+                    <path
+                        key={i}
+                        d={`
+                        M 0 ${Math.random() * window.innerHeight}
+                        C ${Math.random() * window.innerWidth / 3} ${Math.random() * window.innerHeight},
+                            ${Math.random() * window.innerWidth} ${Math.random() * window.innerHeight},
+                            ${window.innerWidth} ${Math.random() * window.innerHeight}
+                        `}
+                        stroke="rgba(0, 6, 25, 0.19)"
+                        strokeWidth={1.5 + Math.random()} 
+                        fill="none"
+                    >
+                        <animate
+                        attributeName="stroke-dasharray"
+                        values="0,3000;3000,0"
+                        dur={`${15 + Math.random() * 15}s`}
+                        repeatCount="indefinite"
+                        />
+                    </path>
+                    ))}
+                </svg>
             </div>
 
             <Container>

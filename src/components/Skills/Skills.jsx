@@ -24,10 +24,10 @@ function Skills() {
     const skills = [
         { name: "PHP", icon: faPhp, color: "#8993be" },
         { name: "Laravel", icon: faLaravel, color: "#ff2d20" },
-        { name: "React", icon: faReact, color: "#61DBFB" },
         { name: "MySQL", icon: faDatabase, color: "#00758f" },
-        { name: "NodeJS", icon: faNodeJs, color: "#3c873a" },
         { name: "MongoDB", icon: faDatabase, color: "#4DB33D" },
+        { name: "React", icon: faReact, color: "#61DBFB" },
+        { name: "NodeJS", icon: faNodeJs, color: "#3c873a" },
         { name: "HTML5", icon: faHtml5, color: "#E34F26" },
         { name: "CSS3", icon: faCss3Alt, color: "#264de4" },
         { name: "JavaScript", icon: faJs, color: "#F7DF1E" },
