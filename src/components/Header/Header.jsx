@@ -3,7 +3,6 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import { ReactTyped } from "react-typed";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub, faTelegram, faFacebook } from "@fortawesome/free-brands-svg-icons";
-import { faCode } from "@fortawesome/free-solid-svg-icons";
 import profileImg from "../../assets/profile.png";
 import './Header.css';
 

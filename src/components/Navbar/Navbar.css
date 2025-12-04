@@ -1,25 +1,27 @@
 .my-navbar {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
-    position: sticky;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     padding: 0.8rem 0;
 }
 
 .my-navbar .nav-link {
     color: black !important;
     margin-left: 1rem;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 .my-navbar .nav-link:hover {
     color: #2575fc !important;
 }
 
+/* Highlight active section */
+.active-link {
+    color: #2575fc !important;
+    border-bottom: 2px solid #2575fc;
+    padding-bottom: 3px;
+}
+
 .brand {
     font-size: 20px;
     font-weight: bold;
     color: black !important;
-}
-
-.barnd:hover {
-    color: #2575fc !important;
 }

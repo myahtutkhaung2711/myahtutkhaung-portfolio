@@ -3,22 +3,28 @@ import './Works.css';
 
 const projects = [
   {
-    title: 'Portfolio Website',
-    image: 'https://via.placeholder.com/400x200',
+    title: 'Todo App',
+    type: 'React / Node.JS',
+    image: './src/assets/default_project.jpg',
     description: 'A personal portfolio built with React and Bootstrap.',
+    demo: 'https://github.com/yourusername/portfolio',
     link: 'https://github.com/yourusername/portfolio'
   },
   {
     title: 'E-commerce Shop',
-    image: 'https://via.placeholder.com/400x200',
+    type: 'PHP / Laravel',
+    image: '/src/assets/default_project.jpg',
     description: 'A Laravel & MySQL online shop with authentication and cart.',
-    link: 'https://github.com/yourusername/shop'
+    demo: 'https://github.com/myahtutkhaung2711/E-Commerce',
+    link: 'https://github.com/myahtutkhaung2711/E-Commerce'
   },
   {
-    title: 'Todo App',
-    image: 'https://via.placeholder.com/400x200',
+    title: 'Blog System',
+    type: 'PHP',
+    image: './src/assets/default_project.jpg',
     description: 'A simple React Todo app with local storage.',
-    link: 'https://github.com/yourusername/todo-app'
+    demo: 'https://github.com/myahtutkhaung2711/PHP-Blog-System',
+    link: 'https://github.com/myahtutkhaung2711/PHP-Blog-System'
   }
 ];
 
@@ -34,9 +40,10 @@ const Works = () => {
                     <div className="card-body d-flex flex-column">
                         <h5 className="card-title">{project.title}</h5>
                         <p className="card-text flex-grow-1">{project.description}</p>
-                        <a href={project.link} target="_blank" rel="noreferrer" className="btn btn-primary mt-auto">
-                        View Project
-                        </a>
+                        <div className="d-flex align-item-center justify-content-center gap-3">
+                          <a href={project.demo} target='_blank' rel='noreferre' className='btn btn-outline-info mt-auto'>Demo</a>
+                          <a href={project.link} target="_blank" rel="noreferrer" className="btn btn-outline-primary mt-auto">Website</a>
+                        </div>
                     </div>
                     </div>
                 </div>

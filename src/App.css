@@ -7,14 +7,18 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  color: #1e293b; /* slightly darker for contrast */
+.section-background {
+  background-color: #0000000a;
 }
 
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  color: #1e293b;
+}
+/* 
 a {
-  color: #0dcaf0; /* cyan accent */
+  color: #0dcaf0;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -22,7 +26,7 @@ a {
 a:hover {
   color: #0d6efd;
   border-bottom: 2px solid #0d6efd;
-}
+} */
 
 .container {
   max-width: 1140px;

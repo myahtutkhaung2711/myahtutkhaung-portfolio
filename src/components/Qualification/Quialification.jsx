@@ -25,7 +25,7 @@ function Qualification() {
     },
     {
       type: 'education',
-      title: 'KMD College , Myanmar',
+      title: 'Twinkle Collage , Myanmar',
       subtitle: 'BSc (Hons) in Computing',
       year: '2025 - pending',
     },
